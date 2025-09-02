@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pascal Fortunati</title>
+    <link id="theme-link" rel="stylesheet" href="assets/css/pascal-fortunati.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Bouton retour -->
+        <div>
+            <a href="bbt.html" class="btn btn-primary">&larr; Retour à l'accueil</a>
+        </div>
+        <br>
+        <!-- Bouton switch Light/Dark -->
+        <div class="theme-switch">
+            <input type="checkbox" id="switch-theme">
+            <label for="switch-theme">Changer de thème</label>
+        </div>
+
+        <!-- Avatar -->
+        <div>
+            <img src="assets/img/pascal.png" alt="Pascal Fortunati" class="avatar">
+            <h1>Pascal Fortunati</h1>
+        </div>
+
+        <!-- Texte de présentation -->
+        <div class="card" style="max-width:700px;">
+            <p>
+                Je suis passionné par l'Asie, sa culture et ses traditions. J’aime aussi tout ce qui touche à
+                l’informatique et aux jeux vidéo – c’est un domaine où je suis curieux et que j’ai envie d’explorer
+                encore plus.
+                J’adore voyager et découvrir de nouveaux endroits, de nouvelles cultures.
+            </p>
+            <p>
+                Je suis quelqu’un de motivé, curieux et toujours prêt à apprendre.
+                On me dit souvent que je suis pédagogue, que j’aime aider les autres à comprendre.
+                Et surtout, j’essaie toujours d’apporter de la bonne humeur autour de moi.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const switchTheme = document.getElementById("switch-theme");
+        const themeLink = document.getElementById("theme-link");
+
+        // Applique le thème sauvegardé
+        const saved = localStorage.getItem("theme");
+        if (saved === "dark") {
+            themeLink.href = "assets/css/pascal-fortunati2.css";
+            switchTheme.checked = true;
+        } else {
+            themeLink.href = "assets/css/pascal-fortunati.css";
+            switchTheme.checked = false;
+        }
+
+        // Toggle
+        switchTheme.addEventListener("change", () => {
+            if (switchTheme.checked) {
+                themeLink.href = "assets/css/pascal-fortunati2.css";
+                localStorage.setItem("theme", "dark");
+            } else {
+                themeLink.href = "assets/css/pascal-fortunati.css";
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+</body>
+
+</html>

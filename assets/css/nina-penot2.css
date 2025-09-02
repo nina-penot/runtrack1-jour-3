@@ -1,0 +1,109 @@
+/* My styles here */
+/* Feulle de style 1, thème océanique */
+
+html {
+    cursor: url("../img/Obsidian.png") 10 10, auto;
+}
+
+body {
+    background-image: url('../img/piton de la fournaise.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(234, 43, 43);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    margin: 5px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 114, 75);
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px rgb(172, 18, 18);
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    float: left;
+    background-color: rgb(255, 151, 60);
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(167, 15, 15);
+    color: rgb(255, 236, 129);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+a:link {
+    color: rgb(255, 96, 29);
+}
+
+a:visited {
+    color: rgb(106, 4, 65)
+}
+
+a:hover {
+    color: rgb(247, 255, 93);
+}
+
+.theme-switch {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background: rgb(234, 43, 43);
+    color: white;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: rgb(255, 236, 129);
+    color: #000;
+}
+
+label {
+    cursor: pointer;
+    background: rgb(234, 43, 43);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: rgb(255, 236, 129);
+    color: #000;
+}

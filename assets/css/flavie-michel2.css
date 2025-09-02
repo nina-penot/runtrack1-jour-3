@@ -1,0 +1,185 @@
+html {
+    background-image: url("https://cdn.futura-sciences.com/buildsv6/wallpaper/4029_1280x1024_674DB.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-indent: 20px;
+    color: rgb(73, 66, 57);
+    font-size: larger;
+    text-align: justify;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.paragraphe {
+    color: rgb(245, 8, 8);
+    float: left;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1fb471, #2a2a2a);
+}
+
+.bleu {
+    color: rgb(59, 59, 168);
+    float: left;
+    border-radius: 10px;
+    background: radial-gradient(circle, #f9f9f9, #d9616b);
+
+}
+
+.presentation {
+    color: rgb(240, 230, 230);
+    font-size: 100px;
+    font-weight: bolder;
+    text-decoration: double;
+    background-color: rgb(141, 132, 124);
+    border-width: 20px;
+    border-color: rgb(226, 13, 130);
+    border: #c90e0e;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.description {
+    color: rgb(37, 141, 232);
+    font-size: 215px;
+    font-weight: bolder;
+    text-decoration: solid;
+    background-color: rgb(196, 140, 68);
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://cdn.futura-sciences.com/buildsv6/wallpaper/4173_1280x1024_B57DA.jpg");
+}
+
+.droite {
+    color: rgb(0, 0, 0);
+    font-size: 2150px00px;
+    font-weight: bolder;
+    text-decoration: solid;
+    background-color: rgb(196, 140, 68);
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border: solid;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    float: right;
+}
+
+.liste {
+    list-style: lower-alpha;
+}
+
+li:hover {
+    color: aqua;
+    cursor: crosshair;
+}
+
+.display {
+    display: flex;
+    float: left;
+}
+
+
+.cadre {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+}
+
+.bloc {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+.bloc1 {
+    background-color: #1fb471;
+    padding: 2px;
+
+}
+
+.bloc2 {
+    background-color: #f8d7da;
+}
+
+.nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #c90e0e;
+    padding: 20px;
+}
+
+.para {
+    float: left;
+    width: auto;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #605353;
+    padding: 20px;
+}
+
+#idee {
+    color: #0b0b0b;
+}
+
+#bleu {
+    background: radial-gradient(circle, #f9f9f9, #d9616b);
+}
+
+.theme-switch {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #0056b3;
+}
+
+label {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Présentation personnelle</title>
+    <link id="theme-link" rel="stylesheet" href="assets/css/flavie-michel.css">
+</head>
+
+<body>
+    <!-- Bouton retour -->
+    <div>
+        <a href="bbt.html" class="btn btn-primary">&larr; Retour à l'accueil</a>
+    </div>
+    <br>
+    <!-- Bouton switch Light/Dark -->
+    <div class="theme-switch mb-4">
+        <input type="checkbox" id="switch-theme">
+        <label for="switch-theme">Changer de thème</label>
+    </div>
+
+    <h1 class="presentation"> PRESENTATION</h1>
+    <h1 class="description">Flavie Michel</h1>
+    <h2>Description</h2>
+    <section class="nav">
+        <nav>
+            <ul class="liste">
+                <li id="idee"> motivation</li>
+                <li id="bleu"> rigueur</li>
+                <li>réactivité</li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="para">
+        <p class="bloc1 paragraphe">
+            Je suis passionnée par les jeux vidéo, les animaux et, plus généralement, par la nature.
+            Curieuse de nature, j’aime découvrir de nouvelles choses, relever des défis et apprendre de nouveaux
+            métiers.
+        </p>
+
+        <p class="bloc2">Une véritable source de motivation pour moi.</p>
+
+        <p class="droite"> Me décrit souvent comme quelqu’un de rigoureuse : j’aime faire les choses
+            sérieusement, avec
+            soin,
+            et aller jusqu’au bout de ce que j’entreprends.
+        </p>
+
+    </section>
+    </div>
+</body>
+<script>
+    const switchTheme = document.getElementById("switch-theme");
+    const themeLink = document.getElementById("theme-link");
+
+    // Applique le thème sauvegardé
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+        themeLink.href = "assets/css/flavie-michel2.css";
+        switchTheme.checked = true;
+    } else {
+        themeLink.href = "assets/css/flavie-michel.css";
+        switchTheme.checked = false;
+    }
+
+    // Toggle
+    switchTheme.addEventListener("change", () => {
+        if (switchTheme.checked) {
+            themeLink.href = "assets/css/flavie-michel2.css";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeLink.href = "assets/css/flavie-michel.css";
+            localStorage.setItem("theme", "light");
+        }
+    });
+</script>
+
+</html>

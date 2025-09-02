@@ -1,0 +1,60 @@
+.head {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.bio {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.site {
+    text-align: center;
+    font-weight: bold;
+}
+
+.theme-switch {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #0056b3;
+}
+
+label {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #0056b3;
+}

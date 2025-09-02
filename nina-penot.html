@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<!-- My head here -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-link" href="assets/css/nina-penot.css" rel="stylesheet">
+    <title>Site de Nina PENOT</title>
+</head>
+
+<!-- My mains website and body here -->
+
+<body>
+    <!-- Insert body here -->
+
+    <!-- Bouton retour -->
+    <div>
+        <a href="bbt.html" class="btn btn-primary">&larr; Retour à l'accueil</a>
+    </div>
+    <br>
+    <!-- Bouton switch Light/Dark -->
+    <div class="theme-switch">
+        <input type="checkbox" id="switch-theme">
+        <label for="switch-theme">Changer de thème</label>
+    </div>
+
+    <header>Nina PENOT</header>
+    <section>
+        <nav>
+            Mes passions:
+            <ul>
+                <li>Le dessin</li>
+                <li>La nature</li>
+                <li>Les animaux</li>
+                <li>Biologie</li>
+                <li>Géologie</li>
+                <li>Astronomie</li>
+            </ul>
+        </nav>
+        <article>
+            Bonjour et bienvenue sur mon site de présentation!
+            <p>
+                Je suis une artiste illustritratrice digitale freelance de 31 ans qui est aussi intéressée dans
+                l'informatique.
+            </p>
+            <p>
+                Vous pouvez voir mes passions sur la gauche j'aime aussi les jeux vidéos et la randonnée.
+            </p>
+        </article>
+    </section>
+    <footer>
+        Vous pouvez aussi visiter mon site web <a href="https://tigerarainbowra.carrd.co">ici!</a>
+    </footer>
+</body>
+<script>
+    const switchTheme = document.getElementById("switch-theme");
+    const themeLink = document.getElementById("theme-link");
+
+    // Applique le thème sauvegardé
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark") {
+        themeLink.href = "assets/css/nina-penot2.css";
+        switchTheme.checked = true;
+    } else {
+        themeLink.href = "assets/css/nina-penot.css";
+        switchTheme.checked = false;
+    }
+
+    // Toggle
+    switchTheme.addEventListener("change", () => {
+        if (switchTheme.checked) {
+            themeLink.href = "assets/css/nina-penot2.css";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeLink.href = "assets/css/nina-penot.css";
+            localStorage.setItem("theme", "light");
+        }
+    });
+</script>
+
+</html>

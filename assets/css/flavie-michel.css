@@ -1,0 +1,194 @@
+html {
+    background-image: url("https://cdn.futura-sciences.com/cdn-cgi/image/width=1024,quality=60,format=auto/sources/images/screen/UNIVERS/Ciels%20profonds/070617-cielprofond43.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-style: oblique;
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(171, 146, 110);
+}
+
+p {
+    text-indent: 20px;
+    color: rgb(73, 66, 57);
+    font-size: larger;
+    text-align: left;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.paragraphe {
+    color: rgb(45, 174, 19);
+    float: right;
+    border-radius: 20px;
+    background-color: rgb(180, 134, 72);
+}
+
+.bleu {
+    color: rgb(59, 59, 168);
+    float: left;
+    border-radius: 10px;
+    background-color: antiquewhite;
+
+}
+
+.presentation {
+    color: rgb(240, 230, 230);
+    font-size: 100px;
+    font-weight: bolder;
+    text-decoration: double;
+    background-color: rgb(19, 18, 17);
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.description {
+    color: rgb(223, 230, 236);
+    font-size: 2150px00px;
+    font-weight: bolder;
+    text-decoration: double;
+    background-color: rgb(196, 140, 68);
+    border-width: 2px;
+    border-color: black;
+    border: #d1e7dd;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://cdn.futura-sciences.com/buildsv6/wallpaper/4173_1280x1024_B57DA.jpg");
+}
+
+.droite {
+    color: rgb(130, 46, 46);
+    font-size: 2150px00px;
+    font-weight: bolder;
+    text-decoration: solid;
+    background-color: rgb(196, 140, 68);
+    border-width: 2px;
+    border-color: black;
+    border: solid;
+    text-shadow: 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    float: right;
+}
+
+.liste {
+    list-style: none;
+}
+
+li:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    float: left;
+}
+
+
+
+
+
+/* Appliquer un cadre  */
+.cadre {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+}
+
+.bloc {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Optionnel : Couleur ou style différent pour chaque bloc */
+.bloc1 {
+    background-color: #5dedac;
+}
+
+.bloc2 {
+    background-color: #f8d7da;
+}
+
+.nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #c90e0e;
+    padding: 20px;
+}
+
+.para {
+    float: left;
+    width: auto;
+    height: 300px;
+    /* only for demonstration, should be removed */
+    background: #c56262;
+    padding: 20px;
+}
+
+#idee {
+    color: #0b0b0b;
+}
+
+#bleu {
+    background-color: #ac3d3d;
+}
+
+.theme-switch {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #ac3d3d;
+    color: white;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #5f1b1b;
+}
+
+label {
+    cursor: pointer;
+    background: #ac3d3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #5f1b1b;
+}

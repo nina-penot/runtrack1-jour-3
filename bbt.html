@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les R@tons</title>
+    <link id="theme-link" rel="stylesheet" href="assets/css/bbt.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bouton switch Light/Dark -->
+        <div class="theme-switch">
+            <input type="checkbox" id="switch-theme">
+            <label for="switch-theme">Changer de thème</label>
+        </div>
+
+        <h1>Bienvenue sur mon Accueil</h1>
+
+        <!-- Avatars -->
+        <div class="avatars">
+            <a href="pascal-fortunati.html" class="avatar">
+                <img src="assets/img/pascal.png" alt="Avatar 1">
+                <h3>Pascal Fortunati</h3>
+            </a>
+            <a href="nina-penot.html" class="avatar">
+                <img src="assets/img/nina.png" alt="Avatar 2">
+                <h3>Nina Penot</h3>
+            </a>
+            <a href="flavie-michel.html" class="avatar">
+                <img src="assets/img/flavie.jpg" alt="Avatar 3">
+                <h3>Flavie Michel</h3>
+            </a>
+            <a href="laetitia-quintin.html" class="avatar">
+                <img src="assets/img/laetitia.jpg" alt="Avatar 4">
+                <h3>Laetitia Quintin</h3>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const switchTheme = document.getElementById("switch-theme");
+        const themeLink = document.getElementById("theme-link");
+
+        // Vérifie si un thème est déjà enregistré
+        if (localStorage.getItem("theme") === "dark") {
+            themeLink.href = "assets/css/bbt2.css";
+            switchTheme.checked = true;
+        }
+
+        switchTheme.addEventListener("change", () => {
+            if (switchTheme.checked) {
+                themeLink.href = "assets/css/bbt2.css";
+                localStorage.setItem("theme", "dark");
+            } else {
+                themeLink.href = "assets/css/bbt.css";
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+</body>
+
+</html>

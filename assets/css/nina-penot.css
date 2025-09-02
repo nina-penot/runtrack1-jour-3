@@ -1,0 +1,108 @@
+/* My styles here */
+/* Feulle de style 1, thème océanique */
+
+html {
+    cursor: url("../img/Clam_smol.png") 5 5, auto;
+}
+
+body {
+    background-image: url('../img/plage boucan canot.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(252, 239, 188);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    margin: 5px;
+    box-shadow: 5px 5px 5px rgb(15, 3, 72);
+    border-radius: 10px;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    background-color: rgb(110, 219, 249);
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px rgb(15, 3, 72);
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    float: left;
+    background-color: rgb(62, 62, 201);
+    color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(15, 3, 72);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+footer {
+    background-color: white;
+    color: rgb(7, 7, 113);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgb(15, 3, 72);
+}
+
+a:link {
+    color: rgb(27, 76, 255);
+}
+
+a:visited {
+    color: rgb(6, 6, 126)
+}
+
+a:hover {
+    color: aqua;
+}
+
+.theme-switch {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+a.btn:hover {
+    background: #0056b3;
+}
+
+label {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #0056b3;
+}
